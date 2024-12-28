@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatically change light/dark mode from time of day
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,6 @@
+[Unit]
+Description = Automatically change light/dark mode from time of day
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/scripts/auto_theme.sh

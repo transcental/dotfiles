@@ -1,0 +1,7 @@
+[Unit]
+Description = Reload waybar config
+
+[Service]
+Type=oneshot
+ExecStart=killall -SIGUSR2 waybar
+ExecStart=notify-send "Reloaded waybar"
